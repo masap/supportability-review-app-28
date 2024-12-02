@@ -5,13 +5,16 @@
   "license": "UNLICENSED",
   "private": false,
   "engines": {
-    "node": ">=16"
+    "node": ">=20"
   },
   "dependencies": {
     "cache-loader": "^4.1.0",
     "color": "4.2.3",
     "ip": "2.0.1",
     "@rancher/shell": "1.2.3"
+  },
+  "resolutions": {
+    "@achrinza/node-ipc": "^10.1.11"
   },
   "scripts": {
     "dev": "NODE_ENV=dev ./node_modules/.bin/vue-cli-service serve",
