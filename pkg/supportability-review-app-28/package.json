@@ -1,7 +1,8 @@
 {
-  "name": "supportability-review-app-28",
-  "description": "supportability-review-app-28 plugin",
+  "name": "supportability-review",
+  "description": "Supportability Review UI Extension",
   "version": "0.1.0",
+  "license": "UNLICENSED",
   "private": false,
   "rancher": {
     "annotations": {
@@ -10,7 +11,13 @@
       "catalog.cattle.io/ui-extensions-version": ">= 1.2.3 < 2.0.0"
     }
   },
-  "scripts": {},
+  "scripts": {
+    "dev": "nuxt dev",
+    "nuxt": "nuxt",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "format": "prettier --write ./",
+    "format-check": "prettier --check ./"
+  },
   "engines": {
     "node": ">=16"
   },
@@ -36,7 +43,8 @@
     "qs": "6.11.1",
     "roarr": "7.0.4",
     "semver": "7.5.4",
-    "@vue/cli-service/html-webpack-plugin": "^5.0.0"
+    "@vue/cli-service/html-webpack-plugin": "^5.0.0",
+    "prettier": "^3.3.2"
   },
   "browserslist": [
     "> 1%",

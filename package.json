@@ -1,6 +1,8 @@
 {
-  "name": "supportability-review-app-28-dummy",
+  "name": "supportability-review-ui",
+  "description": "Supportability Review UI extension",
   "version": "0.1.0",
+  "license": "UNLICENSED",
   "private": false,
   "engines": {
     "node": ">=16"
